@@ -1,7 +1,7 @@
 // import 'regenerator-runtime/runtime'; //async/await with Parcel
 import questionToAnswer from '../questionToAnswer/questionToAnswer.js';
 import { cpu } from '../playerCPU/playerCPU.js';
-import { vehiclesArrayImg, starshipArrayImg } from '../starshipsAndVehicles';
+import { vehiclesArrayImg, starshipArrayImg } from '../starshipsAndVehicles.js';
 import { timerComponent } from '../loader/loader.js';
 
 const urlPeopleRequest = 'https://swapi.dev/api/people/';
