@@ -1,0 +1,741 @@
+star-wars-loader::part(lightsaber),
+star-wars-loader::part(counter) {
+         display: flex;
+         flex-wrap: no-wrap;
+         justify-content: center;
+         align-items: center;
+      }
+
+      star-wars-loader::part(lighstaberHandler) {
+         flex-shrink: 0;
+      }
+
+      star-wars-loader::part(lightsaberColor) {
+         width: 70vw;
+         height: 20px;
+         border-radius: 20px;
+         background-color: #bcbcbc;
+      }
+      star-wars-loader::part(countdown-text),
+      star-wars-loader::part(timer) {
+         color: #d81e06;
+         font-size: 24px;
+         font-weight: 900;
+      }
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+.title{
+    margin: auto auto;
+    background-color: black;
+    grid-area: title;
+    color: white;
+    text-align: center;
+    font-family: 'Audiowide', cursive;
+    font-size: 2em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 4px 4px 40px rgba(255, 230, 0, 0.9), inset 4px 5px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+    height: fit-content;
+    width: 60vw;
+}
+
+.title p {
+    margin: 0.25em;
+}
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+.rules {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background: rgba(5, 0, 24, 0.3);
+    border-radius: 16px;
+    width: 100%;
+    height: 27.5vh;
+    grid-area: rules;
+    margin: 0.5em auto auto;
+}
+
+#modeRules {
+    font-family: 'Audiowide', cursive;
+    color: #FFE81F;
+    font-size: 1.5em;
+    line-height: 1.75em;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#gameRules {
+    font-family: 'Montserrat', sans-serif;
+    color: #FFE81F;
+    text-align: center;
+    font-size: 1.25em;
+    box-sizing: border-box;
+    padding: 0.5em 1.5em;
+}
+
+#iconRules {
+    height: 1.25em;
+    filter: invert(99%) sepia(0%) saturate(160%) hue-rotate(254deg) brightness(111%) contrast(101%);
+    fill: white;
+}
+.menu{
+    background-color: transparent;
+    grid-area: modes-list;
+    width: 60vw;
+}
+.modes-list{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.modes-list li{
+    width: 28%;
+    padding: 0.5rem 0;
+    border-radius: 16px;
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 50px;
+    color: #FFFFFF;
+    background-color: #050018;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), 2px 2px 20px rgba(255, 0, 0, 0.9);
+}
+
+.modes-list li.dark{
+    box-shadow: 4px 4px 4px rgba(255, 0, 0, 0.25), 6px 6px 6px #FF0000;
+}
+
+.modes-list li:hover{
+    cursor: pointer;
+}
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+.yellow-button {
+    grid-area: yellow-button;
+    width: 25vw;
+    height: fit-content;
+    margin: 30px auto;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.hall-of-fame-btn{
+    background: rgba(255, 232, 31, 0.8);
+    border: 1px solid rgba(255, 230, 0, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 4px 4px 20px rgba(255, 230, 0, 0.9);
+    border-radius: 16px;
+    width: 100%;
+    font-size: 2em;
+    padding: 10px;
+    font-family: 'Audiowide', cursive;
+    color: #FFFFFF;
+
+    transition: transform 200ms ease-in-out;
+}
+
+.hall-of-fame-btn:active{
+    transform: translateY(10%)
+}
+.fame-container{
+    padding: 0;
+    grid-area: rules;
+}
+
+.fame-paragraph{
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    color: #FFE81F;
+    text-align: center;
+}
+
+.ranking{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.ranking ul {
+    list-style-type: none;
+}
+
+.ranking li{
+    color: #FFE81F;
+    margin-bottom: 0.5rem;
+}
+
+.fame-container li.bold{
+    font-weight: bold;
+}
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+.red-button {
+    background-color: red;
+    border: 1px solid rgba(255, 0, 0, 0.5);
+    box-sizing: border-box;
+    opacity: 0.8;
+    width: 25vw;
+    height: fit-content;
+    margin: 30px auto;
+    grid-area: red-button;
+    font-family: 'Audiowide', cursive;
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    border-radius: 16px;
+    padding: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 4px 4px 40px rgba(255, 0, 0, 0.9);
+}
+
+.red-button p {
+    margin: 0;
+}
+
+.red-button:hover {
+    cursor: pointer;
+}
+.img-container { 
+    grid-area: img-container;
+    margin: auto auto;
+    height: 50vh;
+    display: grid;
+    align-content: center;
+}
+
+.img-container img {
+    max-height: 50vh;
+    max-width: 25vw;
+    box-shadow: 2px 2px 15px darkred;
+    border-radius: 20px;
+    object-fit: cover;
+    
+}
+.logo { 
+    grid-area: logo;
+    margin: auto auto; }
+
+.logo img {
+    display: block;
+    max-width: 20vw;
+    border-radius: 20px;
+    margin: auto auto;
+    cursor: pointer;
+}
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+.modal-window {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    width: 80vw;
+    height: 90vh;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: black;
+    box-shadow: 2px 2px 15px darkred;
+    border-radius: 20px;
+}
+
+.superDiv {
+    display: grid;
+    grid-template-columns: 0.6fr 1.4fr;
+    grid-template-rows: 1.75fr 4fr 2.25fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "game-over game-over"
+        "yoda results"
+        "inputTry inputTry";
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+}
+
+.game-over { 
+    grid-area: game-over;
+    text-align: center; }
+
+.game-over h1{
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Audiowide', cursive;
+    margin: 0.4em;
+}
+
+.game-over p{
+    color: white;
+    font-size: 1em;
+    margin: 0.4em;
+}
+
+.results { 
+    grid-area: results;
+    box-shadow: 2px 2px 15px rgba(255, 230, 0, 0.9);
+    border-radius: 20px;
+    width: 90%;
+    /* height: 85%; */
+    height: 45vh;
+    margin: 1em auto auto auto;
+}
+
+.results h2 {
+    color: white;
+    box-sizing: border-box;
+    padding: 0.5em;
+    position: sticky;
+    height: 20%;
+    margin: 0;
+    font-size: 1.25em;
+}
+
+.super-answer {
+    height: 80%;
+}
+
+.super-answer-header {
+    display: grid;
+    height: 10%;
+    grid-template-columns: 0.7fr 1.1fr 1.1fr 1.1fr;
+    font-size: 1.25em;
+}
+
+.super-answer p {
+    display: inline-block;
+    padding: 0;
+}
+
+.super-answer-body {
+    /* height: 255px; */
+    height: 90%;
+    overflow-y: auto;
+}
+::-webkit-scrollbar {
+    width: 3px;
+  }
+.super-answer-body div div {
+    display: grid;
+    grid-template-columns: 0.7fr 1.1fr 1.1fr 1.1fr;
+    font-size: 1em;
+    align-items: center;
+}
+
+.super-answer-body div div img {
+    max-width: 60%;
+    margin: auto;
+}
+
+.answers-table-correct {
+    color: green;
+}
+.answers-table-incorrect {
+    color: red;
+}
+
+.super-answer-header > p{
+    padding: 0;
+    margin: 0;
+}
+
+.yoda {
+    grid-area: yoda;
+    width: 75%;
+    margin: auto;
+}
+
+#inputTry {
+    grid-area: inputTry;
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+
+#player-input {
+    width: 30vw;
+    margin: 0.5em 1em;
+    box-sizing: border-box;
+}
+
+#player-input[type="text"]
+{
+    font-size: 1em;
+}
+
+.fill-name {
+    display: inline-block;
+    margin:0.5em 0.5em;
+    font-size: 1em;
+}
+
+.force-button { 
+    background-color: red;
+    border: 1px solid rgba(255, 0, 0, 0.5);
+    box-sizing: border-box;
+    opacity: 0.8;
+    font-family: 'Audiowide', cursive;
+    font-size: 1.25em;
+    text-align: center;
+    color: white;
+    border-radius: 16px;
+    padding: 7px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 4px 4px 40px rgba(255, 0, 0, 0.9);
+    margin: 0.5em;
+}
+.display-none{
+    display: none;
+}
+.corectAnswer{
+    background-color: green;
+}
+.wrongAnswer{
+    background-color: red;
+}
+
+mode-change {
+    grid-column: 2/4;
+    margin: auto auto;
+    width: 60vw;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(/QuizBackground.4641544b.png);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.9fr 0.6fr 1.5fr 1fr;
+    grid-template-areas: 
+    "logo menu menu"
+    "img-container title title"
+    "img-container rules rules"
+    "settings-button yellow-button red-button";
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+}
+
+star-wars-loader {
+    grid-column: 1/-1;
+}
+
+/*TABLET LANDSCAPE*/
+@media only screen and (max-width: 1024px) and (orientation: landscape) 
+{}
+
+/*PHONE LANDSCAPE*/
+@media only screen and (max-width: 812px) and (orientation: landscape) 
+{
+    .logo img {
+        max-width: 22.5vw;
+    }
+
+    .title{
+        margin: auto auto;
+        font-size: 1.25em;
+        border-radius: 16px;
+        width: 60vw;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), 2px 2px 20px rgba(255, 230, 0, 0.9), inset 2px 3px 2px rgba(0, 0, 0, 0.5);
+    }
+    
+    .rules {
+        width: 100%;
+        height: 30vh;
+        margin: 10px auto auto;
+    }
+    
+    #modeRules {
+        font-size: 1.25em;
+        line-height: 1em;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    
+    #gameRules {
+        font-size: 0.9em;
+        box-sizing: border-box;
+        padding: 0.25em 1.25em;
+    }
+    
+    #iconRules {
+        height: 1em;
+    }
+
+    .yellow-button {
+        width: 25vw;
+        height: fit-content;
+        margin: 15px auto;
+    }
+    
+    .hall-of-fame-btn{
+        width: 100%;
+        font-size: 1em;
+        padding: 10px;
+    }
+    
+    .red-button {
+        width: 25vw;
+        height: fit-content;
+        margin: 15px auto;
+        font-size: 1em;
+    }
+    
+    .red-button p {
+        margin: 0;
+    }
+
+    .modal-window {
+        width: 90vw;
+        height: 90vh;
+    }
+
+    .superDiv {
+        grid-template-rows: 1.5fr 3.25fr 2.75fr;
+    }
+
+    .game-over h1{
+        font-size: 1em;
+        margin: 0.4em;
+    }
+    
+    .game-over p{
+        font-size: 0.75em;
+        margin: 0.25em;
+    }
+
+    .results { 
+        width: 95%;
+        /* height: 75%; */
+        margin: auto auto;
+    }
+    
+    .results h2 {
+        padding: 0.25em 1.5em;
+        height: 20%;
+        font-size: 1em;
+    }
+
+    
+    .super-answer {
+        height: 80%;
+    }
+
+    .super-answer-header {
+        font-size: 1em;
+        height: 20%;
+    }
+
+    .super-answer-body {
+        height: 77.5%;
+    }
+
+    .super-answer-body div div {
+        font-size: 0.75em;
+        align-items: center;
+    }
+    
+    .super-answer-body div div img {
+        max-width: 50%;
+        margin: auto;
+    }
+
+    #player-input {
+        width: 20vw;
+        margin: 0.25em 0.5em;
+    }
+    
+    #player-input[type="text"]
+    {
+        font-size: 0.75em;
+    }
+    
+    .fill-name {
+        display: inline-block;
+        margin:0.25em 0.25em;
+        font-size: 0.75em;
+    }
+
+    .force-button { 
+        font-size: 1em;
+        padding: 4px;
+        margin: 0.25em;
+    }
+}
+
+/*TABLET PORTRAIT*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) 
+ {}
+
+/*PHONE PORTRAIT*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px)
+{
+    body{
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr 4fr 1fr 3fr 1fr 1fr;
+        grid-template-rows: unset;
+        grid-template-areas: 
+        "logo"
+        "menu"
+        "img-container"
+        "title"
+        "rules"
+        "yellow-button"
+        "red-button"
+        "settings-button";
+    }
+
+    .logo img{
+        max-width: 35vw;
+    }
+
+    mode-change{
+        grid-column: unset;
+        width: 100vw;
+    }
+
+    .img-container { 
+        height: 30vh;
+        margin: 0 auto;
+    }
+    
+    .img-container img {
+        max-height: 30vh;
+        max-width: 35vw;
+    }
+
+    .title{
+        width: 95vw;
+        font-size: 1.2em;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25), 2px 2px 20px rgba(255, 230, 0, 0.9), inset 2px 3px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .rules {
+        width: 100%;
+        height: 20vh;
+        margin: auto auto;
+    }
+    
+    #modeRules {
+        font-size: 1.1em;
+        line-height: 0.8em;
+        padding: 5px;
+    }
+    
+    #gameRules {
+        font-size: 0.9em;
+        padding: 0.15em 0.85em;
+    }
+    
+    #iconRules {
+        height: 1em;
+    }
+
+    .yellow-button {
+        width: 80vw;
+        margin: 5px auto;
+    }
+    
+    .hall-of-fame-btn{
+        width: 100%;
+        font-size: 1em;
+        padding: 5px;
+    }
+    
+    .red-button {
+        width: 80vw;;
+        margin: 5px auto;
+        font-size: 1em;
+        padding: 5px;
+    }
+    
+    .red-button p {
+        margin: 0;
+    }
+
+    .modal-window {
+        width: 95vw;
+        height: 95vh;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .superDiv {
+        grid-template-columns: 100%;
+        grid-template-rows: 1.5fr 4fr 2fr;
+        grid-template-areas:
+            "game-over"
+            "results"
+            "inputTry";
+    }
+
+    .game-over h1{
+        font-size: 1em;
+        margin: 0.525em;
+    }
+    
+    .game-over p{
+        font-size: 1em;
+        margin: 0.25em;
+    }
+
+    .results { 
+        width: 95%;
+        /* height: 85%; */
+        margin: auto auto;
+    }
+    
+    .results h2 {
+        padding: 0.25em 1em;
+        height: 12.5%;
+        font-size: 1em;
+        ;
+    }
+
+    .super-answer {
+        height: 85%;
+    }
+
+    .super-answer-header {
+        font-size: 1em;
+        height: 15%;
+    }
+
+    .super-answer-body {
+        height: 82.5%;
+    }
+
+    .super-answer-body div div {
+        font-size: 0.8em;
+        align-items: center;
+    }
+
+    #player-input {
+        width: 40vw;
+        margin: 0.25em 0.5em;
+    }
+    
+    #player-input[type="text"]
+    {
+        font-size: 1em;
+    }
+    
+    .fill-name {
+        display: inline-block;
+        margin:0.25em 0.25em;
+        font-size: 1em;
+    }
+
+    .force-button { 
+        font-size: 1em;
+        padding: 4px;
+        margin: 0.75em;
+    }
+}
+
+/*# sourceMappingURL=/App.5fff0933.css.map */
