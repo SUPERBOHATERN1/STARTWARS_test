@@ -1,5 +1,5 @@
 
-import "/regenerator-runtime/runtime";
+import "../node_modules/regenerator-runtime/runtime";
 import {App} from "./app/App.js";
 
 const ONE_SECOND_MILLIS = 1000;
