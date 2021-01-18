@@ -1,7 +1,7 @@
 // aktywuj linijke niżej dla wersji lokalnej
 // import generadeRandomQuestions from '../components/generateQuestion/LocalGenerateQuestion';
-import generadeRandomQuestions from '../components/generateQuestion/generateQuestion';
-import { cpu } from '../components/playerCPU/playerCPU';
+import generadeRandomQuestions from '../components/generateQuestion/generateQuestion.js';
+import { cpu } from '../components/playerCPU/playerCPU.js';
 
 export const App = ({ options }) => {
   const playGameButton = document.querySelector('.red-button');
